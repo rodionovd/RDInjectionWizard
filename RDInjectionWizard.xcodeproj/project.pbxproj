@@ -15,6 +15,9 @@
 		0A2E22AD197170BF00255B00 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A2E22AB197170BF00255B00 /* InfoPlist.strings */; };
 		0A2E22AF197170BF00255B00 /* RDInjectionWizardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2E22AE197170BF00255B00 /* RDInjectionWizardTests.m */; };
 		0A61A27B1972AF0300728FAB /* RDIWDaemonMasterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A61A27A1972AF0300728FAB /* RDIWDaemonMasterTests.m */; };
+		0A891D2B1980FE8A00CAF525 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A891D2A1980FE8A00CAF525 /* AppDelegate.m */; };
+		0A891D2E1980FE9400CAF525 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A891D2C1980FE9400CAF525 /* MainMenu.xib */; };
+		0A891D321980FEA100CAF525 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A891D301980FEA100CAF525 /* main.m */; };
 		0A8D0F5D197176960075B0E2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2E228D197170BF00255B00 /* Cocoa.framework */; };
 		0A8D0F63197176960075B0E2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A8D0F61197176960075B0E2 /* InfoPlist.strings */; };
 		0A8D0F65197176960075B0E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D0F64197176960075B0E2 /* main.m */; };
@@ -28,9 +31,6 @@
 		0AAEE16619742203008C231A /* libtestnoop.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AAEE16519742203008C231A /* libtestnoop.h */; };
 		0AAEE16819742203008C231A /* libtestnoop.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAEE16719742203008C231A /* libtestnoop.m */; };
 		0AAEE18419742291008C231A /* libtestnoop64.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 0AAEE16319742203008C231A /* libtestnoop64.dylib */; };
-		0AAEE1B519743F95008C231A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAEE19719742D73008C231A /* AppDelegate.m */; };
-		0AAEE1B619743F95008C231A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAEE19419742D73008C231A /* main.m */; };
-		0AAEE1B919743F95008C231A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AAEE19B19742D73008C231A /* MainMenu.xib */; };
 		0AAEE1BF19743FF3008C231A /* demoTarget64.app in Resources */ = {isa = PBXBuildFile; fileRef = 0AAEE1BD19743F95008C231A /* demoTarget64.app */; };
 		0AEA0BF31972990700452D6E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA0BF21972990700452D6E /* main.c */; };
 		0AFCE4441975745200D51EE6 /* rd_inject_library.c in Sources */ = {isa = PBXBuildFile; fileRef = 0AFCE4411975745200D51EE6 /* rd_inject_library.c */; };
@@ -122,6 +122,10 @@
 		0A2E22AC197170BF00255B00 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0A2E22AE197170BF00255B00 /* RDInjectionWizardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDInjectionWizardTests.m; sourceTree = "<group>"; };
 		0A61A27A1972AF0300728FAB /* RDIWDaemonMasterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDIWDaemonMasterTests.m; sourceTree = "<group>"; };
+		0A891D291980FE8A00CAF525 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = demoTarget64/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		0A891D2A1980FE8A00CAF525 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = demoTarget64/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		0A891D2D1980FE9400CAF525 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = demoTarget64/Base.lproj/MainMenu.xib; sourceTree = SOURCE_ROOT; };
+		0A891D301980FEA100CAF525 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = demoTarget64/main.m; sourceTree = SOURCE_ROOT; };
 		0A8D0F5C197176950075B0E2 /* RDInjectionWizardTestsHost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RDInjectionWizardTestsHost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A8D0F60197176960075B0E2 /* RDInjectionWizardTestsHost-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RDInjectionWizardTestsHost-Info.plist"; sourceTree = "<group>"; };
 		0A8D0F62197176960075B0E2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -137,11 +141,6 @@
 		0AAEE16319742203008C231A /* libtestnoop64.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libtestnoop64.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AAEE16519742203008C231A /* libtestnoop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libtestnoop.h; sourceTree = "<group>"; };
 		0AAEE16719742203008C231A /* libtestnoop.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libtestnoop.m; sourceTree = "<group>"; };
-		0AAEE19319742D73008C231A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0AAEE19419742D73008C231A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0AAEE19619742D73008C231A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		0AAEE19719742D73008C231A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0AAEE19C19742D73008C231A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		0AAEE1BD19743F95008C231A /* demoTarget64.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demoTarget64.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AEA0BF21972990700452D6E /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = main.c; path = injector/main.c; sourceTree = SOURCE_ROOT; };
 		0AEA0BF41972994100452D6E /* unload_deamon.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = unload_deamon.sh; sourceTree = "<group>"; };
@@ -351,9 +350,9 @@
 		0AAEE19119742D73008C231A /* demoTarget */ = {
 			isa = PBXGroup;
 			children = (
-				0AAEE19619742D73008C231A /* AppDelegate.h */,
-				0AAEE19719742D73008C231A /* AppDelegate.m */,
-				0AAEE19B19742D73008C231A /* MainMenu.xib */,
+				0A891D291980FE8A00CAF525 /* AppDelegate.h */,
+				0A891D2A1980FE8A00CAF525 /* AppDelegate.m */,
+				0A891D2C1980FE9400CAF525 /* MainMenu.xib */,
 				0AAEE19219742D73008C231A /* Supporting Files */,
 			);
 			name = demoTarget;
@@ -364,8 +363,7 @@
 			isa = PBXGroup;
 			children = (
 				0AEDA3A619750E1400F04A63 /* demoTarget64-Info.plist */,
-				0AAEE19319742D73008C231A /* Info.plist */,
-				0AAEE19419742D73008C231A /* main.m */,
+				0A891D301980FEA100CAF525 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -583,7 +581,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AAEE1B919743F95008C231A /* MainMenu.xib in Resources */,
+				0A891D2E1980FE9400CAF525 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -629,8 +627,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AAEE1B519743F95008C231A /* AppDelegate.m in Sources */,
-				0AAEE1B619743F95008C231A /* main.m in Sources */,
+				0A891D321980FEA100CAF525 /* main.m in Sources */,
+				0A891D2B1980FE8A00CAF525 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -695,6 +693,14 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
+		0A891D2C1980FE9400CAF525 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A891D2D1980FE9400CAF525 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
 		0A8D0F61197176960075B0E2 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -715,14 +721,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				0A8D0F6E197176960075B0E2 /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		0AAEE19B19742D73008C231A /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0AAEE19C19742D73008C231A /* Base */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
