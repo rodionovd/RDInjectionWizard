@@ -43,13 +43,13 @@ typedef void (^RDInjectionFailedBlock)(RDInjectionError error);
  * @param success
  * The block to be executed on the completion of the injection.
  * It takes no arguments and has no return value.
- * @param failrue
+ * @param failure
  * the block to be executed upon an injection error.
  * It has no return value and takes one argument: an error that occured during the injection.
  */
 
 - (void)injectUsingCompletionBlockWithSuccess: (RDInjectionSuccededBlock) success
-                                      failrue: (RDInjectionFailedBlock) failrue;
+                                      failure: (RDInjectionFailedBlock) failure;
 /**
  * @abstract
  * Looks up a sandbox-friendly location of the payload.

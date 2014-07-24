@@ -32,11 +32,11 @@
 }
 
 - (void)injectUsingCompletionBlockWithSuccess: (RDInjectionSuccededBlock) success
-                                      failrue: (RDInjectionFailedBlock) failrue
+                                      failure: (RDInjectionFailedBlock) failure
 {
     if (_target < 0) {
         dispatch_async(_callbackQueue, ^{
-            if (failrue) failrue(kInvalidProcessIdentifier);
+            if (failure) failure(kInvalidProcessIdentifier);
         });
         return;
     }
@@ -44,7 +44,7 @@
     BOOL _payload_exists = [[NSFileManager defaultManager] fileExistsAtPath: _payload];
     if (!_payload_exists) {
         dispatch_async(_callbackQueue, ^{
-            if (failrue) failrue(kInvalidPayload);
+            if (failure) failure(kInvalidPayload);
         });
         return;
     }
@@ -58,7 +58,7 @@
     NSString *sandbox_friendly_payload = [self sandboxFriendlyPayloadPath];
     if ([sandbox_friendly_payload length] == 0) {
         dispatch_async(_callbackQueue, ^{
-            if (failrue) failrue(kInvalidPayload);
+            if (failure) failure(kInvalidPayload);
         });
         return;
     }
@@ -73,7 +73,7 @@
         if (!copied) {
             NSLog(@"%s: %@", __PRETTY_FUNCTION__, error);
             dispatch_async(_callbackQueue, ^{
-                if (failrue) failrue(kInvalidPayload);
+                if (failure) failure(kInvalidPayload);
             });
             return;
         }
@@ -93,7 +93,7 @@
          if (!reply) {
              NSLog(@"%s: daemon connection error: %d", __PRETTY_FUNCTION__, error);
              dispatch_async(_callbackQueue, ^{
-                 if (failrue) failrue(kCouldNotConnectToHelper);
+                 if (failure) failure(kCouldNotConnectToHelper);
              });
              return;
          }
@@ -104,7 +104,7 @@
              });
          } else {
              dispatch_async(_callbackQueue, ^{
-                 if (failrue) failrue(kInjectionFailed);
+                 if (failure) failure(kInjectionFailed);
              });
          }
      }];

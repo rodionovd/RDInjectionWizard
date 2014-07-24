@@ -53,7 +53,7 @@
     [wizard injectUsingCompletionBlockWithSuccess: ^{
         fired = YES;
         [callbackFiredExpectation fulfill];
-    } failrue: ^(RDInjectionError error) {
+    } failure: ^(RDInjectionError error) {
         fired = YES;
         XCTFail(@"This test should pass, but here we've got an error: %d", error);
         [callbackFiredExpectation fulfill];
@@ -92,7 +92,7 @@
     [wizard injectUsingCompletionBlockWithSuccess: ^{
         fired = YES;
         [callbackFiredExpectation fulfill];
-    } failrue: ^(RDInjectionError error) {
+    } failure: ^(RDInjectionError error) {
         fired = YES;
         XCTFail(@"This test should pass, but here we've got an error: %d", error);
         [callbackFiredExpectation fulfill];
@@ -118,7 +118,7 @@
         fired = YES;
         XCTFail(@"This test should not succeed");
         [callbackFiredExpectation fulfill];
-    } failrue: ^(RDInjectionError error) {
+    } failure: ^(RDInjectionError error) {
         fired = YES;
         XCTAssert(error == kInvalidPayload);
         [callbackFiredExpectation fulfill];
@@ -147,7 +147,7 @@
         XCTFail(@"This test should not succeed");
         [callbackFiredExpectation fulfill];
 
-    } failrue: ^(RDInjectionError error) {
+    } failure: ^(RDInjectionError error) {
         fired = YES;
         XCTAssert(error == kInvalidProcessIdentifier);
         [callbackFiredExpectation fulfill];
