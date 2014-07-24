@@ -1,0 +1,1097 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A2E2298197170BF00255B00 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A2E2296197170BF00255B00 /* InfoPlist.strings */; };
+		0A2E229C197170BF00255B00 /* RDInjectionWizard.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2E229B197170BF00255B00 /* RDInjectionWizard.m */; };
+		0A2E22A3197170BF00255B00 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2E22A2197170BF00255B00 /* XCTest.framework */; };
+		0A2E22A4197170BF00255B00 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2E228D197170BF00255B00 /* Cocoa.framework */; };
+		0A2E22A7197170BF00255B00 /* RDInjectionWizard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2E228A197170BF00255B00 /* RDInjectionWizard.framework */; };
+		0A2E22AD197170BF00255B00 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A2E22AB197170BF00255B00 /* InfoPlist.strings */; };
+		0A2E22AF197170BF00255B00 /* RDInjectionWizardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2E22AE197170BF00255B00 /* RDInjectionWizardTests.m */; };
+		0A61A27B1972AF0300728FAB /* RDIWDaemonMasterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A61A27A1972AF0300728FAB /* RDIWDaemonMasterTests.m */; };
+		0A8D0F5D197176960075B0E2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2E228D197170BF00255B00 /* Cocoa.framework */; };
+		0A8D0F63197176960075B0E2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A8D0F61197176960075B0E2 /* InfoPlist.strings */; };
+		0A8D0F65197176960075B0E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D0F64197176960075B0E2 /* main.m */; };
+		0A8D0F69197176960075B0E2 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0A8D0F67197176960075B0E2 /* Credits.rtf */; };
+		0A8D0F6C197176960075B0E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D0F6B197176960075B0E2 /* AppDelegate.m */; };
+		0A8D0F6F197176960075B0E2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A8D0F6D197176960075B0E2 /* MainMenu.xib */; };
+		0A8D0F8C197178210075B0E2 /* RDInjectionWizard.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A2E229A197170BF00255B00 /* RDInjectionWizard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A8D0F8D197178300075B0E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2E2290197170BF00255B00 /* Foundation.framework */; };
+		0A8D0F901971860B0075B0E2 /* RDIWDeamonMaster.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A8D0F8E1971860B0075B0E2 /* RDIWDeamonMaster.h */; };
+		0A8D0F911971860B0075B0E2 /* RDIWDeamonMaster.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8D0F8F1971860B0075B0E2 /* RDIWDeamonMaster.m */; };
+		0AAEE16619742203008C231A /* libtestnoop.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AAEE16519742203008C231A /* libtestnoop.h */; };
+		0AAEE16819742203008C231A /* libtestnoop.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAEE16719742203008C231A /* libtestnoop.m */; };
+		0AAEE18419742291008C231A /* libtestnoop64.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 0AAEE16319742203008C231A /* libtestnoop64.dylib */; };
+		0AAEE1B519743F95008C231A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAEE19719742D73008C231A /* AppDelegate.m */; };
+		0AAEE1B619743F95008C231A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAEE19419742D73008C231A /* main.m */; };
+		0AAEE1B919743F95008C231A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AAEE19B19742D73008C231A /* MainMenu.xib */; };
+		0AAEE1BF19743FF3008C231A /* demoTarget64.app in Resources */ = {isa = PBXBuildFile; fileRef = 0AAEE1BD19743F95008C231A /* demoTarget64.app */; };
+		0AEA0BF31972990700452D6E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA0BF21972990700452D6E /* main.c */; };
+		0AFCE4441975745200D51EE6 /* rd_inject_library.c in Sources */ = {isa = PBXBuildFile; fileRef = 0AFCE4411975745200D51EE6 /* rd_inject_library.c */; };
+		0AFEB84D197288B900BE2968 /* me.rodionovd.RDInjectionWizard.injector in Copy the XPC service */ = {isa = PBXBuildFile; fileRef = 0AFEB8401972876B00BE2968 /* me.rodionovd.RDInjectionWizard.injector */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A2E22A5197170BF00255B00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A2E2281197170BF00255B00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A2E2289197170BF00255B00;
+			remoteInfo = RDInjectionWizard;
+		};
+		0A8D0F891971777E0075B0E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A2E2281197170BF00255B00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A8D0F5B197176950075B0E2;
+			remoteInfo = RDInjectionWizardTestsHost;
+		};
+		0AAEE1861974229A008C231A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A2E2281197170BF00255B00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AAEE16219742203008C231A;
+			remoteInfo = libtestnoop64;
+		};
+		0AAEE18A19742329008C231A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A2E2281197170BF00255B00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A2E2289197170BF00255B00;
+			remoteInfo = RDInjectionWizard;
+		};
+		0AAEE1C019744008008C231A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A2E2281197170BF00255B00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AAEE1B319743F95008C231A;
+			remoteInfo = demoTarget64;
+		};
+		0AFEB84B197288B100BE2968 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A2E2281197170BF00255B00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AFEB83F1972876B00BE2968;
+			remoteInfo = injector;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0A8D0FA71971A10E0075B0E2 /* Copy the XPC service */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = LaunchServices;
+			dstSubfolderSpec = 1;
+			files = (
+				0AFEB84D197288B900BE2968 /* me.rodionovd.RDInjectionWizard.injector in Copy the XPC service */,
+			);
+			name = "Copy the XPC service";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AFEB83E1972876B00BE2968 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0A2E228A197170BF00255B00 /* RDInjectionWizard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RDInjectionWizard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A2E228D197170BF00255B00 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		0A2E2290197170BF00255B00 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0A2E2291197170BF00255B00 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0A2E2292197170BF00255B00 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		0A2E2295197170BF00255B00 /* RDInjectionWizard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RDInjectionWizard-Info.plist"; sourceTree = "<group>"; };
+		0A2E2297197170BF00255B00 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0A2E2299197170BF00255B00 /* RDInjectionWizard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RDInjectionWizard-Prefix.pch"; sourceTree = "<group>"; };
+		0A2E229A197170BF00255B00 /* RDInjectionWizard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDInjectionWizard.h; sourceTree = "<group>"; };
+		0A2E229B197170BF00255B00 /* RDInjectionWizard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDInjectionWizard.m; sourceTree = "<group>"; };
+		0A2E22A1197170BF00255B00 /* RDInjectionWizardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RDInjectionWizardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A2E22A2197170BF00255B00 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0A2E22AA197170BF00255B00 /* RDInjectionWizardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RDInjectionWizardTests-Info.plist"; sourceTree = "<group>"; };
+		0A2E22AC197170BF00255B00 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0A2E22AE197170BF00255B00 /* RDInjectionWizardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDInjectionWizardTests.m; sourceTree = "<group>"; };
+		0A61A27A1972AF0300728FAB /* RDIWDaemonMasterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDIWDaemonMasterTests.m; sourceTree = "<group>"; };
+		0A8D0F5C197176950075B0E2 /* RDInjectionWizardTestsHost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RDInjectionWizardTestsHost.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A8D0F60197176960075B0E2 /* RDInjectionWizardTestsHost-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RDInjectionWizardTestsHost-Info.plist"; sourceTree = "<group>"; };
+		0A8D0F62197176960075B0E2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0A8D0F64197176960075B0E2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0A8D0F66197176960075B0E2 /* RDInjectionWizardTestsHost-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RDInjectionWizardTestsHost-Prefix.pch"; sourceTree = "<group>"; };
+		0A8D0F68197176960075B0E2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		0A8D0F6A197176960075B0E2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0A8D0F6B197176960075B0E2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0A8D0F6E197176960075B0E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		0A8D0F8E1971860B0075B0E2 /* RDIWDeamonMaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDIWDeamonMaster.h; sourceTree = "<group>"; };
+		0A8D0F8F1971860B0075B0E2 /* RDIWDeamonMaster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDIWDeamonMaster.m; sourceTree = "<group>"; };
+		0A8D0F9719719F890075B0E2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0AAEE16319742203008C231A /* libtestnoop64.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libtestnoop64.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AAEE16519742203008C231A /* libtestnoop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libtestnoop.h; sourceTree = "<group>"; };
+		0AAEE16719742203008C231A /* libtestnoop.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libtestnoop.m; sourceTree = "<group>"; };
+		0AAEE19319742D73008C231A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AAEE19419742D73008C231A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0AAEE19619742D73008C231A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0AAEE19719742D73008C231A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0AAEE19C19742D73008C231A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		0AAEE1BD19743F95008C231A /* demoTarget64.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demoTarget64.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AEA0BF21972990700452D6E /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = main.c; path = injector/main.c; sourceTree = SOURCE_ROOT; };
+		0AEA0BF41972994100452D6E /* unload_deamon.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = unload_deamon.sh; sourceTree = "<group>"; };
+		0AEDA3A619750E1400F04A63 /* demoTarget64-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "demoTarget64-Info.plist"; path = "/Users/rodionovd/Documents/OSS/RDInjectionWizard/demoTarget64-Info.plist"; sourceTree = "<absolute>"; };
+		0AFCE4411975745200D51EE6 /* rd_inject_library.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = rd_inject_library.c; path = injector/rd_inject_library/rd_inject_library.c; sourceTree = SOURCE_ROOT; };
+		0AFCE4421975745200D51EE6 /* rd_inject_library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rd_inject_library.h; path = injector/rd_inject_library/rd_inject_library.h; sourceTree = SOURCE_ROOT; };
+		0AFEB8401972876B00BE2968 /* me.rodionovd.RDInjectionWizard.injector */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = me.rodionovd.RDInjectionWizard.injector; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AFEB8491972884E00BE2968 /* me.rodionovd.RDInjectionWizard.injector-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "me.rodionovd.RDInjectionWizard.injector-Info.plist"; path = "injector/me.rodionovd.RDInjectionWizard.injector-Info.plist"; sourceTree = SOURCE_ROOT; };
+		0AFEB84A1972884E00BE2968 /* me.rodionovd.RDInjectionWizard.injector-Launchd.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "me.rodionovd.RDInjectionWizard.injector-Launchd.plist"; path = "injector/me.rodionovd.RDInjectionWizard.injector-Launchd.plist"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A2E2286197170BF00255B00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A8D0F8D197178300075B0E2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A2E229E197170BF00255B00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A2E22A7197170BF00255B00 /* RDInjectionWizard.framework in Frameworks */,
+				0A2E22A4197170BF00255B00 /* Cocoa.framework in Frameworks */,
+				0A2E22A3197170BF00255B00 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A8D0F59197176950075B0E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A8D0F5D197176960075B0E2 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AAEE16019742203008C231A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AAEE1B719743F95008C231A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AFEB83D1972876B00BE2968 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A2E2280197170BF00255B00 = {
+			isa = PBXGroup;
+			children = (
+				0A2E2293197170BF00255B00 /* RDInjectionWizard */,
+				0A8D0F9919719F890075B0E2 /* Privileged injection helper */,
+				0A8D0F8B197177E30075B0E2 /* Tests */,
+				0AEA0BF41972994100452D6E /* unload_deamon.sh */,
+				0A2E228C197170BF00255B00 /* Frameworks */,
+				0A2E228B197170BF00255B00 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A2E228B197170BF00255B00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A2E228A197170BF00255B00 /* RDInjectionWizard.framework */,
+				0A2E22A1197170BF00255B00 /* RDInjectionWizardTests.xctest */,
+				0A8D0F5C197176950075B0E2 /* RDInjectionWizardTestsHost.app */,
+				0AFEB8401972876B00BE2968 /* me.rodionovd.RDInjectionWizard.injector */,
+				0AAEE16319742203008C231A /* libtestnoop64.dylib */,
+				0AAEE1BD19743F95008C231A /* demoTarget64.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A2E228C197170BF00255B00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A2E228D197170BF00255B00 /* Cocoa.framework */,
+				0A2E22A2197170BF00255B00 /* XCTest.framework */,
+				0A8D0F9719719F890075B0E2 /* Foundation.framework */,
+				0A2E228F197170BF00255B00 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0A2E228F197170BF00255B00 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A2E2290197170BF00255B00 /* Foundation.framework */,
+				0A2E2291197170BF00255B00 /* CoreData.framework */,
+				0A2E2292197170BF00255B00 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		0A2E2293197170BF00255B00 /* RDInjectionWizard */ = {
+			isa = PBXGroup;
+			children = (
+				0A2E229A197170BF00255B00 /* RDInjectionWizard.h */,
+				0A2E229B197170BF00255B00 /* RDInjectionWizard.m */,
+				0A8D0F8E1971860B0075B0E2 /* RDIWDeamonMaster.h */,
+				0A8D0F8F1971860B0075B0E2 /* RDIWDeamonMaster.m */,
+				0A2E2294197170BF00255B00 /* Supporting Files */,
+			);
+			path = RDInjectionWizard;
+			sourceTree = "<group>";
+		};
+		0A2E2294197170BF00255B00 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A2E2295197170BF00255B00 /* RDInjectionWizard-Info.plist */,
+				0A2E2296197170BF00255B00 /* InfoPlist.strings */,
+				0A2E2299197170BF00255B00 /* RDInjectionWizard-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A2E22A8197170BF00255B00 /* RDInjectionWizardTests */ = {
+			isa = PBXGroup;
+			children = (
+				0A2E22AE197170BF00255B00 /* RDInjectionWizardTests.m */,
+				0A61A27A1972AF0300728FAB /* RDIWDaemonMasterTests.m */,
+				0A2E22A9197170BF00255B00 /* Supporting Files */,
+			);
+			path = RDInjectionWizardTests;
+			sourceTree = "<group>";
+		};
+		0A2E22A9197170BF00255B00 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A2E22AA197170BF00255B00 /* RDInjectionWizardTests-Info.plist */,
+				0A2E22AB197170BF00255B00 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A8D0F5E197176960075B0E2 /* RDInjectionWizardTestsHost */ = {
+			isa = PBXGroup;
+			children = (
+				0A8D0F6A197176960075B0E2 /* AppDelegate.h */,
+				0A8D0F6B197176960075B0E2 /* AppDelegate.m */,
+				0A8D0F6D197176960075B0E2 /* MainMenu.xib */,
+				0A8D0F60197176960075B0E2 /* RDInjectionWizardTestsHost-Info.plist */,
+				0A8D0F5F197176960075B0E2 /* Supporting Files */,
+			);
+			path = RDInjectionWizardTestsHost;
+			sourceTree = "<group>";
+		};
+		0A8D0F5F197176960075B0E2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A8D0F61197176960075B0E2 /* InfoPlist.strings */,
+				0A8D0F64197176960075B0E2 /* main.m */,
+				0A8D0F66197176960075B0E2 /* RDInjectionWizardTestsHost-Prefix.pch */,
+				0A8D0F67197176960075B0E2 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A8D0F8B197177E30075B0E2 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0A2E22A8197170BF00255B00 /* RDInjectionWizardTests */,
+				0A8D0F5E197176960075B0E2 /* RDInjectionWizardTestsHost */,
+				0AAEE16419742203008C231A /* libtestnoop */,
+				0AAEE19119742D73008C231A /* demoTarget */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		0A8D0F9919719F890075B0E2 /* Privileged injection helper */ = {
+			isa = PBXGroup;
+			children = (
+				0AEA0BF21972990700452D6E /* main.c */,
+				0AFCE4411975745200D51EE6 /* rd_inject_library.c */,
+				0AFCE4421975745200D51EE6 /* rd_inject_library.h */,
+				0AFEB8491972884E00BE2968 /* me.rodionovd.RDInjectionWizard.injector-Info.plist */,
+				0AFEB84A1972884E00BE2968 /* me.rodionovd.RDInjectionWizard.injector-Launchd.plist */,
+			);
+			name = "Privileged injection helper";
+			path = helper;
+			sourceTree = "<group>";
+		};
+		0AAEE16419742203008C231A /* libtestnoop */ = {
+			isa = PBXGroup;
+			children = (
+				0AAEE16519742203008C231A /* libtestnoop.h */,
+				0AAEE16719742203008C231A /* libtestnoop.m */,
+			);
+			name = libtestnoop;
+			path = libtestnoop64;
+			sourceTree = "<group>";
+		};
+		0AAEE19119742D73008C231A /* demoTarget */ = {
+			isa = PBXGroup;
+			children = (
+				0AAEE19619742D73008C231A /* AppDelegate.h */,
+				0AAEE19719742D73008C231A /* AppDelegate.m */,
+				0AAEE19B19742D73008C231A /* MainMenu.xib */,
+				0AAEE19219742D73008C231A /* Supporting Files */,
+			);
+			name = demoTarget;
+			path = demoTarget32;
+			sourceTree = "<group>";
+		};
+		0AAEE19219742D73008C231A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0AEDA3A619750E1400F04A63 /* demoTarget64-Info.plist */,
+				0AAEE19319742D73008C231A /* Info.plist */,
+				0AAEE19419742D73008C231A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0A2E2287197170BF00255B00 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A8D0F8C197178210075B0E2 /* RDInjectionWizard.h in Headers */,
+				0A8D0F901971860B0075B0E2 /* RDIWDeamonMaster.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AAEE16119742203008C231A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AAEE16619742203008C231A /* libtestnoop.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0A2E2289197170BF00255B00 /* RDInjectionWizard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A2E22B2197170BF00255B00 /* Build configuration list for PBXNativeTarget "RDInjectionWizard" */;
+			buildPhases = (
+				0A2E2285197170BF00255B00 /* Sources */,
+				0A2E2286197170BF00255B00 /* Frameworks */,
+				0A2E2287197170BF00255B00 /* Headers */,
+				0A2E2288197170BF00255B00 /* Resources */,
+				0A8D0FA71971A10E0075B0E2 /* Copy the XPC service */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A8D0F8A1971777E0075B0E2 /* PBXTargetDependency */,
+				0AFEB84C197288B100BE2968 /* PBXTargetDependency */,
+			);
+			name = RDInjectionWizard;
+			productName = RDInjectionWizard;
+			productReference = 0A2E228A197170BF00255B00 /* RDInjectionWizard.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0A2E22A0197170BF00255B00 /* RDInjectionWizardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A2E22B5197170BF00255B00 /* Build configuration list for PBXNativeTarget "RDInjectionWizardTests" */;
+			buildPhases = (
+				0A2E229D197170BF00255B00 /* Sources */,
+				0A2E229E197170BF00255B00 /* Frameworks */,
+				0A2E229F197170BF00255B00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A2E22A6197170BF00255B00 /* PBXTargetDependency */,
+			);
+			name = RDInjectionWizardTests;
+			productName = RDInjectionWizardTests;
+			productReference = 0A2E22A1197170BF00255B00 /* RDInjectionWizardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0A8D0F5B197176950075B0E2 /* RDInjectionWizardTestsHost */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A8D0F83197176960075B0E2 /* Build configuration list for PBXNativeTarget "RDInjectionWizardTestsHost" */;
+			buildPhases = (
+				0A8D0F58197176950075B0E2 /* Sources */,
+				0A8D0F59197176950075B0E2 /* Frameworks */,
+				0A8D0F5A197176950075B0E2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0AAEE18B19742329008C231A /* PBXTargetDependency */,
+				0AAEE1C119744008008C231A /* PBXTargetDependency */,
+				0AAEE1871974229A008C231A /* PBXTargetDependency */,
+			);
+			name = RDInjectionWizardTestsHost;
+			productName = RDInjectionWizardTestsHost;
+			productReference = 0A8D0F5C197176950075B0E2 /* RDInjectionWizardTestsHost.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0AAEE16219742203008C231A /* libtestnoop64 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AAEE17819742204008C231A /* Build configuration list for PBXNativeTarget "libtestnoop64" */;
+			buildPhases = (
+				0AAEE15F19742203008C231A /* Sources */,
+				0AAEE16019742203008C231A /* Frameworks */,
+				0AAEE16119742203008C231A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libtestnoop64;
+			productName = libtestnoop64;
+			productReference = 0AAEE16319742203008C231A /* libtestnoop64.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		0AAEE1B319743F95008C231A /* demoTarget64 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AAEE1BA19743F95008C231A /* Build configuration list for PBXNativeTarget "demoTarget64" */;
+			buildPhases = (
+				0AAEE1B419743F95008C231A /* Sources */,
+				0AAEE1B719743F95008C231A /* Frameworks */,
+				0AAEE1B819743F95008C231A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = demoTarget64;
+			productName = demoTarget32;
+			productReference = 0AAEE1BD19743F95008C231A /* demoTarget64.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0AFEB83F1972876B00BE2968 /* injector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AFEB8461972876C00BE2968 /* Build configuration list for PBXNativeTarget "injector" */;
+			buildPhases = (
+				0AFEB83C1972876B00BE2968 /* Sources */,
+				0AFEB83D1972876B00BE2968 /* Frameworks */,
+				0AFEB83E1972876B00BE2968 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = injector;
+			productName = injector;
+			productReference = 0AFEB8401972876B00BE2968 /* me.rodionovd.RDInjectionWizard.injector */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A2E2281197170BF00255B00 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = rodionovd;
+				TargetAttributes = {
+					0A2E22A0197170BF00255B00 = {
+						TestTargetID = 0A2E2289197170BF00255B00;
+					};
+					0AAEE16219742203008C231A = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					0AAEE1B319743F95008C231A = {
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 0A2E2284197170BF00255B00 /* Build configuration list for PBXProject "RDInjectionWizard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A2E2280197170BF00255B00;
+			productRefGroup = 0A2E228B197170BF00255B00 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A2E2289197170BF00255B00 /* RDInjectionWizard */,
+				0AFEB83F1972876B00BE2968 /* injector */,
+				0A2E22A0197170BF00255B00 /* RDInjectionWizardTests */,
+				0A8D0F5B197176950075B0E2 /* RDInjectionWizardTestsHost */,
+				0AAEE16219742203008C231A /* libtestnoop64 */,
+				0AAEE1B319743F95008C231A /* demoTarget64 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A2E2288197170BF00255B00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A2E2298197170BF00255B00 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A2E229F197170BF00255B00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A2E22AD197170BF00255B00 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A8D0F5A197176950075B0E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A8D0F63197176960075B0E2 /* InfoPlist.strings in Resources */,
+				0A8D0F69197176960075B0E2 /* Credits.rtf in Resources */,
+				0A8D0F6F197176960075B0E2 /* MainMenu.xib in Resources */,
+				0AAEE18419742291008C231A /* libtestnoop64.dylib in Resources */,
+				0AAEE1BF19743FF3008C231A /* demoTarget64.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AAEE1B819743F95008C231A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AAEE1B919743F95008C231A /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A2E2285197170BF00255B00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A2E229C197170BF00255B00 /* RDInjectionWizard.m in Sources */,
+				0A8D0F911971860B0075B0E2 /* RDIWDeamonMaster.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A2E229D197170BF00255B00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A2E22AF197170BF00255B00 /* RDInjectionWizardTests.m in Sources */,
+				0A61A27B1972AF0300728FAB /* RDIWDaemonMasterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A8D0F58197176950075B0E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A8D0F6C197176960075B0E2 /* AppDelegate.m in Sources */,
+				0A8D0F65197176960075B0E2 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AAEE15F19742203008C231A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AAEE16819742203008C231A /* libtestnoop.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AAEE1B419743F95008C231A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AAEE1B519743F95008C231A /* AppDelegate.m in Sources */,
+				0AAEE1B619743F95008C231A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AFEB83C1972876B00BE2968 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AFCE4441975745200D51EE6 /* rd_inject_library.c in Sources */,
+				0AEA0BF31972990700452D6E /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A2E22A6197170BF00255B00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A2E2289197170BF00255B00 /* RDInjectionWizard */;
+			targetProxy = 0A2E22A5197170BF00255B00 /* PBXContainerItemProxy */;
+		};
+		0A8D0F8A1971777E0075B0E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A8D0F5B197176950075B0E2 /* RDInjectionWizardTestsHost */;
+			targetProxy = 0A8D0F891971777E0075B0E2 /* PBXContainerItemProxy */;
+		};
+		0AAEE1871974229A008C231A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AAEE16219742203008C231A /* libtestnoop64 */;
+			targetProxy = 0AAEE1861974229A008C231A /* PBXContainerItemProxy */;
+		};
+		0AAEE18B19742329008C231A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A2E2289197170BF00255B00 /* RDInjectionWizard */;
+			targetProxy = 0AAEE18A19742329008C231A /* PBXContainerItemProxy */;
+		};
+		0AAEE1C119744008008C231A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AAEE1B319743F95008C231A /* demoTarget64 */;
+			targetProxy = 0AAEE1C019744008008C231A /* PBXContainerItemProxy */;
+		};
+		0AFEB84C197288B100BE2968 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AFEB83F1972876B00BE2968 /* injector */;
+			targetProxy = 0AFEB84B197288B100BE2968 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0A2E2296197170BF00255B00 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A2E2297197170BF00255B00 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0A2E22AB197170BF00255B00 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A2E22AC197170BF00255B00 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0A8D0F61197176960075B0E2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A8D0F62197176960075B0E2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0A8D0F67197176960075B0E2 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A8D0F68197176960075B0E2 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		0A8D0F6D197176960075B0E2 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A8D0F6E197176960075B0E2 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		0AAEE19B19742D73008C231A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AAEE19C19742D73008C231A /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A2E22B0197170BF00255B00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = rodionovd;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_PEDANTIC = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = Debug;
+		};
+		0A2E22B1197170BF00255B00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = rodionovd;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_PEDANTIC = NO;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+				WARNING_CFLAGS = "-Wall";
+			};
+			name = Release;
+		};
+		0A2E22B3197170BF00255B00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RDInjectionWizard/RDInjectionWizard-Prefix.pch";
+				INFOPLIST_FILE = "RDInjectionWizard/RDInjectionWizard-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		0A2E22B4197170BF00255B00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RDInjectionWizard/RDInjectionWizard-Prefix.pch";
+				INFOPLIST_FILE = "RDInjectionWizard/RDInjectionWizard-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		0A2E22B6197170BF00255B00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RDInjectionWizardTestsHost.app/Contents/MacOS/RDInjectionWizardTestsHost";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RDInjectionWizard/RDInjectionWizard-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RDInjectionWizardTests/RDInjectionWizardTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		0A2E22B7197170BF00255B00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RDInjectionWizardTestsHost.app/Contents/MacOS/RDInjectionWizardTestsHost";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RDInjectionWizard/RDInjectionWizard-Prefix.pch";
+				INFOPLIST_FILE = "RDInjectionWizardTests/RDInjectionWizardTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		0A8D0F84197176960075B0E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RDInjectionWizardTestsHost/RDInjectionWizardTestsHost-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RDInjectionWizardTestsHost/RDInjectionWizardTestsHost-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0A8D0F85197176960075B0E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RDInjectionWizardTestsHost/RDInjectionWizardTestsHost-Prefix.pch";
+				INFOPLIST_FILE = "RDInjectionWizardTestsHost/RDInjectionWizardTestsHost-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0AAEE17419742204008C231A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0AAEE17519742204008C231A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0AAEE1BB19743F95008C231A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = rodionovd;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "demoTarget64-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = demoTarget64;
+			};
+			name = Debug;
+		};
+		0AAEE1BC19743F95008C231A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_IDENTITY = rodionovd;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				INFOPLIST_FILE = "demoTarget64-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = demoTarget64;
+			};
+			name = Release;
+		};
+		0AFEB8471972876C00BE2968 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"\"injector/me.rodionovd.RDInjectionWizard.injector-Info.plist\"",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"\"injector/me.rodionovd.RDInjectionWizard.injector-Launchd.plist\"",
+				);
+				PRODUCT_NAME = me.rodionovd.RDInjectionWizard.injector;
+			};
+			name = Debug;
+		};
+		0AFEB8481972876C00BE2968 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"\"injector/me.rodionovd.RDInjectionWizard.injector-Info.plist\"",
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"\"injector/me.rodionovd.RDInjectionWizard.injector-Launchd.plist\"",
+				);
+				PRODUCT_NAME = me.rodionovd.RDInjectionWizard.injector;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A2E2284197170BF00255B00 /* Build configuration list for PBXProject "RDInjectionWizard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A2E22B0197170BF00255B00 /* Debug */,
+				0A2E22B1197170BF00255B00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A2E22B2197170BF00255B00 /* Build configuration list for PBXNativeTarget "RDInjectionWizard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A2E22B3197170BF00255B00 /* Debug */,
+				0A2E22B4197170BF00255B00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A2E22B5197170BF00255B00 /* Build configuration list for PBXNativeTarget "RDInjectionWizardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A2E22B6197170BF00255B00 /* Debug */,
+				0A2E22B7197170BF00255B00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A8D0F83197176960075B0E2 /* Build configuration list for PBXNativeTarget "RDInjectionWizardTestsHost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A8D0F84197176960075B0E2 /* Debug */,
+				0A8D0F85197176960075B0E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AAEE17819742204008C231A /* Build configuration list for PBXNativeTarget "libtestnoop64" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AAEE17419742204008C231A /* Debug */,
+				0AAEE17519742204008C231A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AAEE1BA19743F95008C231A /* Build configuration list for PBXNativeTarget "demoTarget64" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AAEE1BB19743F95008C231A /* Debug */,
+				0AAEE1BC19743F95008C231A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AFEB8461972876C00BE2968 /* Build configuration list for PBXNativeTarget "injector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AFEB8471972876C00BE2968 /* Debug */,
+				0AFEB8481972876C00BE2968 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A2E2281197170BF00255B00 /* Project object */;
+}
