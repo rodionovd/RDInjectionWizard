@@ -32,6 +32,7 @@
 		0AAEE16819742203008C231A /* libtestnoop.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAEE16719742203008C231A /* libtestnoop.m */; };
 		0AAEE18419742291008C231A /* libtestnoop64.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 0AAEE16319742203008C231A /* libtestnoop64.dylib */; };
 		0AAEE1BF19743FF3008C231A /* demoTarget64.app in Resources */ = {isa = PBXBuildFile; fileRef = 0AAEE1BD19743F95008C231A /* demoTarget64.app */; };
+		0AB8FD9C1981002800691034 /* demoTarget64-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AB8FD9B1981002800691034 /* demoTarget64-Info.plist */; };
 		0AEA0BF31972990700452D6E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA0BF21972990700452D6E /* main.c */; };
 		0AFCE4441975745200D51EE6 /* rd_inject_library.c in Sources */ = {isa = PBXBuildFile; fileRef = 0AFCE4411975745200D51EE6 /* rd_inject_library.c */; };
 		0AFEB84D197288B900BE2968 /* me.rodionovd.RDInjectionWizard.injector in Copy the XPC service */ = {isa = PBXBuildFile; fileRef = 0AFEB8401972876B00BE2968 /* me.rodionovd.RDInjectionWizard.injector */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
@@ -142,9 +143,9 @@
 		0AAEE16519742203008C231A /* libtestnoop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libtestnoop.h; sourceTree = "<group>"; };
 		0AAEE16719742203008C231A /* libtestnoop.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libtestnoop.m; sourceTree = "<group>"; };
 		0AAEE1BD19743F95008C231A /* demoTarget64.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demoTarget64.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AB8FD9B1981002800691034 /* demoTarget64-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "demoTarget64-Info.plist"; path = "demoTarget64/demoTarget64-Info.plist"; sourceTree = SOURCE_ROOT; };
 		0AEA0BF21972990700452D6E /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = main.c; path = injector/main.c; sourceTree = SOURCE_ROOT; };
 		0AEA0BF41972994100452D6E /* unload_deamon.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = unload_deamon.sh; sourceTree = "<group>"; };
-		0AEDA3A619750E1400F04A63 /* demoTarget64-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "demoTarget64-Info.plist"; path = "/Users/rodionovd/Documents/OSS/RDInjectionWizard/demoTarget64-Info.plist"; sourceTree = "<absolute>"; };
 		0AFCE4411975745200D51EE6 /* rd_inject_library.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = rd_inject_library.c; path = injector/rd_inject_library/rd_inject_library.c; sourceTree = SOURCE_ROOT; };
 		0AFCE4421975745200D51EE6 /* rd_inject_library.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rd_inject_library.h; path = injector/rd_inject_library/rd_inject_library.h; sourceTree = SOURCE_ROOT; };
 		0AFEB8401972876B00BE2968 /* me.rodionovd.RDInjectionWizard.injector */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = me.rodionovd.RDInjectionWizard.injector; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -362,7 +363,7 @@
 		0AAEE19219742D73008C231A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0AEDA3A619750E1400F04A63 /* demoTarget64-Info.plist */,
+				0AB8FD9B1981002800691034 /* demoTarget64-Info.plist */,
 				0A891D301980FEA100CAF525 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -581,6 +582,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AB8FD9C1981002800691034 /* demoTarget64-Info.plist in Resources */,
 				0A891D2E1980FE9400CAF525 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
