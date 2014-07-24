@@ -1,6 +1,6 @@
 //
-//  rd_inject_bundle.h
-//  rd_inject_bundle
+//  rd_inject_library.h
+//  rd_inject_library
 //
 //  Created by Dmitry Rodionov on 5/31/14.
 //  Copyright (c) 2014 rodionovd. All rights reserved.
