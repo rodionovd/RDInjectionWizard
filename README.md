@@ -23,7 +23,7 @@ Please take into account that, since the project is still in alpha version, ther
 * API is unstable and is going to change in the future;  
 
 
-#### What's about payload?
+#### What's the payload?
 -----
 Note that your payload is a dynamic library that have either a **constructor** function:  
 ```cpp
