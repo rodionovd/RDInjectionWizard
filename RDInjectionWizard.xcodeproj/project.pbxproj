@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A0C83021982E55700CBA7EC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A0C83001982E55700CBA7EC /* MainMenu.xib */; };
+		0A0C830E1982EA2C00CBA7EC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A0C83001982E55700CBA7EC /* MainMenu.xib */; };
 		0A2E2298197170BF00255B00 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A2E2296197170BF00255B00 /* InfoPlist.strings */; };
 		0A2E229C197170BF00255B00 /* RDInjectionWizard.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2E229B197170BF00255B00 /* RDInjectionWizard.m */; };
 		0A2E22A3197170BF00255B00 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2E22A2197170BF00255B00 /* XCTest.framework */; };
@@ -28,7 +28,6 @@
 		0AAEE16819742203008C231A /* libtestnoop.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAEE16719742203008C231A /* libtestnoop.m */; };
 		0AAEE18419742291008C231A /* libtestnoop64.dylib in Resources */ = {isa = PBXBuildFile; fileRef = 0AAEE16319742203008C231A /* libtestnoop64.dylib */; };
 		0AAEE1BF19743FF3008C231A /* demoTarget64.app in Resources */ = {isa = PBXBuildFile; fileRef = 0AAEE1BD19743F95008C231A /* demoTarget64.app */; };
-		0AB8FD9C1981002800691034 /* demoTarget64-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AB8FD9B1981002800691034 /* demoTarget64-Info.plist */; };
 		0AEA0BF31972990700452D6E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA0BF21972990700452D6E /* main.c */; };
 		0AFCE4441975745200D51EE6 /* rd_inject_library.c in Sources */ = {isa = PBXBuildFile; fileRef = 0AFCE4411975745200D51EE6 /* rd_inject_library.c */; };
 		0AFEB84D197288B900BE2968 /* me.rodionovd.RDInjectionWizard.injector in Copy the XPC service */ = {isa = PBXBuildFile; fileRef = 0AFEB8401972876B00BE2968 /* me.rodionovd.RDInjectionWizard.injector */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
@@ -522,7 +521,7 @@
 		0A2E2281197170BF00255B00 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = rodionovd;
 				TargetAttributes = {
 					0A2E22A0197170BF00255B00 = {
@@ -592,8 +591,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AB8FD9C1981002800691034 /* demoTarget64-Info.plist in Resources */,
-				0A0C83021982E55700CBA7EC /* MainMenu.xib in Resources */,
+				0A0C830E1982EA2C00CBA7EC /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
