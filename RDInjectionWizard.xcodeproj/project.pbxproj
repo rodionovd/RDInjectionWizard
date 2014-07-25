@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A0C83021982E55700CBA7EC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A0C83001982E55700CBA7EC /* MainMenu.xib */; };
 		0A2E2298197170BF00255B00 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A2E2296197170BF00255B00 /* InfoPlist.strings */; };
 		0A2E229C197170BF00255B00 /* RDInjectionWizard.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2E229B197170BF00255B00 /* RDInjectionWizard.m */; };
 		0A2E22A3197170BF00255B00 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2E22A2197170BF00255B00 /* XCTest.framework */; };
@@ -16,7 +17,6 @@
 		0A2E22AF197170BF00255B00 /* RDInjectionWizardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2E22AE197170BF00255B00 /* RDInjectionWizardTests.m */; };
 		0A61A27B1972AF0300728FAB /* RDIWDaemonMasterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A61A27A1972AF0300728FAB /* RDIWDaemonMasterTests.m */; };
 		0A891D2B1980FE8A00CAF525 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A891D2A1980FE8A00CAF525 /* AppDelegate.m */; };
-		0A891D2E1980FE9400CAF525 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A891D2C1980FE9400CAF525 /* MainMenu.xib */; };
 		0A891D321980FEA100CAF525 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A891D301980FEA100CAF525 /* main.m */; };
 		0A8D0F5D197176960075B0E2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2E228D197170BF00255B00 /* Cocoa.framework */; };
 		0A8D0F63197176960075B0E2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A8D0F61197176960075B0E2 /* InfoPlist.strings */; };
@@ -39,6 +39,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0A0C83061982E58900CBA7EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A2E2281197170BF00255B00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A2E2289197170BF00255B00;
+			remoteInfo = RDInjectionWizard;
+		};
 		0A2E22A5197170BF00255B00 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0A2E2281197170BF00255B00 /* Project object */;
@@ -107,6 +114,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0A0C83011982E55700CBA7EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		0A2E228A197170BF00255B00 /* RDInjectionWizard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RDInjectionWizard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A2E228D197170BF00255B00 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		0A2E2290197170BF00255B00 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -123,10 +131,9 @@
 		0A2E22AC197170BF00255B00 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0A2E22AE197170BF00255B00 /* RDInjectionWizardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDInjectionWizardTests.m; sourceTree = "<group>"; };
 		0A61A27A1972AF0300728FAB /* RDIWDaemonMasterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDIWDaemonMasterTests.m; sourceTree = "<group>"; };
-		0A891D291980FE8A00CAF525 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = demoTarget64/AppDelegate.h; sourceTree = SOURCE_ROOT; };
-		0A891D2A1980FE8A00CAF525 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = demoTarget64/AppDelegate.m; sourceTree = SOURCE_ROOT; };
-		0A891D2D1980FE9400CAF525 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = demoTarget64/Base.lproj/MainMenu.xib; sourceTree = SOURCE_ROOT; };
-		0A891D301980FEA100CAF525 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = demoTarget64/main.m; sourceTree = SOURCE_ROOT; };
+		0A891D291980FE8A00CAF525 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = RDInjectionWizardTests/demoTarget64/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		0A891D2A1980FE8A00CAF525 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = RDInjectionWizardTests/demoTarget64/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		0A891D301980FEA100CAF525 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RDInjectionWizardTests/demoTarget64/main.m; sourceTree = SOURCE_ROOT; };
 		0A8D0F5C197176950075B0E2 /* RDInjectionWizardTestsHost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RDInjectionWizardTestsHost.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A8D0F60197176960075B0E2 /* RDInjectionWizardTestsHost-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RDInjectionWizardTestsHost-Info.plist"; sourceTree = "<group>"; };
 		0A8D0F62197176960075B0E2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -143,7 +150,7 @@
 		0AAEE16519742203008C231A /* libtestnoop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libtestnoop.h; sourceTree = "<group>"; };
 		0AAEE16719742203008C231A /* libtestnoop.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libtestnoop.m; sourceTree = "<group>"; };
 		0AAEE1BD19743F95008C231A /* demoTarget64.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demoTarget64.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0AB8FD9B1981002800691034 /* demoTarget64-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "demoTarget64-Info.plist"; path = "demoTarget64/demoTarget64-Info.plist"; sourceTree = SOURCE_ROOT; };
+		0AB8FD9B1981002800691034 /* demoTarget64-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "demoTarget64-Info.plist"; path = "RDInjectionWizardTests/demoTarget64/demoTarget64-Info.plist"; sourceTree = SOURCE_ROOT; };
 		0AEA0BF21972990700452D6E /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = main.c; path = injector/main.c; sourceTree = SOURCE_ROOT; };
 		0AEA0BF41972994100452D6E /* unload_deamon.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = unload_deamon.sh; sourceTree = "<group>"; };
 		0AFCE4411975745200D51EE6 /* rd_inject_library.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = rd_inject_library.c; path = injector/rd_inject_library/rd_inject_library.c; sourceTree = SOURCE_ROOT; };
@@ -272,13 +279,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0A2E22A8197170BF00255B00 /* RDInjectionWizardTests */ = {
+		0A2E22A8197170BF00255B00 /* Cases */ = {
 			isa = PBXGroup;
 			children = (
 				0A2E22AE197170BF00255B00 /* RDInjectionWizardTests.m */,
 				0A61A27A1972AF0300728FAB /* RDIWDaemonMasterTests.m */,
 				0A2E22A9197170BF00255B00 /* Supporting Files */,
 			);
+			name = Cases;
 			path = RDInjectionWizardTests;
 			sourceTree = "<group>";
 		};
@@ -291,7 +299,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0A8D0F5E197176960075B0E2 /* RDInjectionWizardTestsHost */ = {
+		0A8D0F5E197176960075B0E2 /* Tests Host */ = {
 			isa = PBXGroup;
 			children = (
 				0A8D0F6A197176960075B0E2 /* AppDelegate.h */,
@@ -300,7 +308,8 @@
 				0A8D0F60197176960075B0E2 /* RDInjectionWizardTestsHost-Info.plist */,
 				0A8D0F5F197176960075B0E2 /* Supporting Files */,
 			);
-			path = RDInjectionWizardTestsHost;
+			name = "Tests Host";
+			path = RDInjectionWizardTests/RDInjectionWizardTestsHost;
 			sourceTree = "<group>";
 		};
 		0A8D0F5F197176960075B0E2 /* Supporting Files */ = {
@@ -317,8 +326,8 @@
 		0A8D0F8B197177E30075B0E2 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				0A2E22A8197170BF00255B00 /* RDInjectionWizardTests */,
-				0A8D0F5E197176960075B0E2 /* RDInjectionWizardTestsHost */,
+				0A2E22A8197170BF00255B00 /* Cases */,
+				0A8D0F5E197176960075B0E2 /* Tests Host */,
 				0AAEE16419742203008C231A /* libtestnoop */,
 				0AAEE19119742D73008C231A /* demoTarget */,
 			);
@@ -345,7 +354,7 @@
 				0AAEE16719742203008C231A /* libtestnoop.m */,
 			);
 			name = libtestnoop;
-			path = libtestnoop64;
+			path = RDInjectionWizardTests/libtestnoop64;
 			sourceTree = "<group>";
 		};
 		0AAEE19119742D73008C231A /* demoTarget */ = {
@@ -353,11 +362,11 @@
 			children = (
 				0A891D291980FE8A00CAF525 /* AppDelegate.h */,
 				0A891D2A1980FE8A00CAF525 /* AppDelegate.m */,
-				0A891D2C1980FE9400CAF525 /* MainMenu.xib */,
+				0A0C83001982E55700CBA7EC /* MainMenu.xib */,
 				0AAEE19219742D73008C231A /* Supporting Files */,
 			);
 			name = demoTarget;
-			path = demoTarget32;
+			path = RDInjectionWizardTests/demoTarget64;
 			sourceTree = "<group>";
 		};
 		0AAEE19219742D73008C231A /* Supporting Files */ = {
@@ -425,6 +434,7 @@
 			);
 			dependencies = (
 				0A2E22A6197170BF00255B00 /* PBXTargetDependency */,
+				0A0C83071982E58900CBA7EC /* PBXTargetDependency */,
 			);
 			name = RDInjectionWizardTests;
 			productName = RDInjectionWizardTests;
@@ -583,7 +593,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AB8FD9C1981002800691034 /* demoTarget64-Info.plist in Resources */,
-				0A891D2E1980FE9400CAF525 /* MainMenu.xib in Resources */,
+				0A0C83021982E55700CBA7EC /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,6 +656,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0A0C83071982E58900CBA7EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A2E2289197170BF00255B00 /* RDInjectionWizard */;
+			targetProxy = 0A0C83061982E58900CBA7EC /* PBXContainerItemProxy */;
+		};
 		0A2E22A6197170BF00255B00 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0A2E2289197170BF00255B00 /* RDInjectionWizard */;
@@ -679,6 +694,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		0A0C83001982E55700CBA7EC /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A0C83011982E55700CBA7EC /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
 		0A2E2296197170BF00255B00 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -693,14 +716,6 @@
 				0A2E22AC197170BF00255B00 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		0A891D2C1980FE9400CAF525 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0A891D2D1980FE9400CAF525 /* Base */,
-			);
-			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 		0A8D0F61197176960075B0E2 /* InfoPlist.strings */ = {
@@ -843,7 +858,6 @@
 		0A2E22B6197170BF00255B00 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RDInjectionWizardTestsHost.app/Contents/MacOS/RDInjectionWizardTestsHost";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -857,7 +871,6 @@
 				);
 				INFOPLIST_FILE = "RDInjectionWizardTests/RDInjectionWizardTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -865,7 +878,6 @@
 		0A2E22B7197170BF00255B00 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RDInjectionWizardTestsHost.app/Contents/MacOS/RDInjectionWizardTestsHost";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -875,7 +887,6 @@
 				GCC_PREFIX_HEADER = "RDInjectionWizard/RDInjectionWizard-Prefix.pch";
 				INFOPLIST_FILE = "RDInjectionWizardTests/RDInjectionWizardTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
