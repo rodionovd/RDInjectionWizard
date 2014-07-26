@@ -3,7 +3,7 @@ Pods/
 # Finder
 .DS_Store
 # Xcode
-*/build/*
+/build
 *.pbxuser
 xcuserdata
 profile

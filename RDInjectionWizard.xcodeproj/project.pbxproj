@@ -62,12 +62,19 @@
 			remoteGlobalIDString = 0A2E2289197170BF00255B00;
 			remoteInfo = RDInjectionWizard;
 		};
-		0A8D0F891971777E0075B0E2 /* PBXContainerItemProxy */ = {
+		0AA491C41983980A0096C481 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0A2E2281197170BF00255B00 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0A8D0F5B197176950075B0E2;
-			remoteInfo = RDInjectionWizardTestsHost;
+			remoteGlobalIDString = 0A2E2289197170BF00255B00;
+			remoteInfo = RDInjectionWizard;
+		};
+		0AA491C61983980A0096C481 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A2E2281197170BF00255B00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A2E2289197170BF00255B00;
+			remoteInfo = RDInjectionWizard;
 		};
 		0AAEE1861974229A008C231A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -415,7 +422,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				0A8D0F8A1971777E0075B0E2 /* PBXTargetDependency */,
 				0AFEB84C197288B100BE2968 /* PBXTargetDependency */,
 			);
 			name = RDInjectionWizard;
@@ -438,6 +444,8 @@
 				0A0C830B1982E66700CBA7EC /* PBXTargetDependency */,
 				0A0C83071982E58900CBA7EC /* PBXTargetDependency */,
 				0A0C83091982E58900CBA7EC /* PBXTargetDependency */,
+				0AA491C51983980A0096C481 /* PBXTargetDependency */,
+				0AA491C71983980A0096C481 /* PBXTargetDependency */,
 			);
 			name = RDInjectionWizardTests;
 			productName = RDInjectionWizardTests;
@@ -674,10 +682,15 @@
 			target = 0A2E2289197170BF00255B00 /* RDInjectionWizard */;
 			targetProxy = 0A2E22A5197170BF00255B00 /* PBXContainerItemProxy */;
 		};
-		0A8D0F8A1971777E0075B0E2 /* PBXTargetDependency */ = {
+		0AA491C51983980A0096C481 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0A8D0F5B197176950075B0E2 /* RDInjectionWizardTestsHost */;
-			targetProxy = 0A8D0F891971777E0075B0E2 /* PBXContainerItemProxy */;
+			target = 0A2E2289197170BF00255B00 /* RDInjectionWizard */;
+			targetProxy = 0AA491C41983980A0096C481 /* PBXContainerItemProxy */;
+		};
+		0AA491C71983980A0096C481 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A2E2289197170BF00255B00 /* RDInjectionWizard */;
+			targetProxy = 0AA491C61983980A0096C481 /* PBXContainerItemProxy */;
 		};
 		0AAEE1871974229A008C231A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
