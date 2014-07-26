@@ -73,7 +73,12 @@
     NSURL *target_url = [[NSBundle mainBundle] URLForResource: @"demoTarget64" withExtension: @"app"];
     XCTAssert(target_url.absoluteString.length > 0);
 
-    [[NSWorkspace sharedWorkspace] launchApplication: @"demoTarget64"];
+    NSError *error = nil;
+    [[NSWorkspace sharedWorkspace] launchApplicationAtURL: target_url
+                                                  options: (NSWorkspaceLaunchDefault | NSWorkspaceLaunchAndHide)
+                                            configuration: nil
+                                                    error: &error];
+    XCTAssertNil(error);
     NSRunningApplication *target64 = nil;
     do {
         target64 = [[NSRunningApplication runningApplicationsWithBundleIdentifier:
