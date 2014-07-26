@@ -69,6 +69,13 @@
 			remoteGlobalIDString = 0A2E2289197170BF00255B00;
 			remoteInfo = RDInjectionWizard;
 		};
+		0AA491C61983980A0096C481 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A2E2281197170BF00255B00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A2E2289197170BF00255B00;
+			remoteInfo = RDInjectionWizard;
+		};
 		0AAEE1861974229A008C231A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0A2E2281197170BF00255B00 /* Project object */;
@@ -438,6 +445,7 @@
 				0A0C83071982E58900CBA7EC /* PBXTargetDependency */,
 				0A0C83091982E58900CBA7EC /* PBXTargetDependency */,
 				0AA491C51983980A0096C481 /* PBXTargetDependency */,
+				0AA491C71983980A0096C481 /* PBXTargetDependency */,
 			);
 			name = RDInjectionWizardTests;
 			productName = RDInjectionWizardTests;
@@ -679,6 +687,11 @@
 			target = 0A2E2289197170BF00255B00 /* RDInjectionWizard */;
 			targetProxy = 0AA491C41983980A0096C481 /* PBXContainerItemProxy */;
 		};
+		0AA491C71983980A0096C481 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A2E2289197170BF00255B00 /* RDInjectionWizard */;
+			targetProxy = 0AA491C61983980A0096C481 /* PBXContainerItemProxy */;
+		};
 		0AAEE1871974229A008C231A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 0AAEE16219742203008C231A /* libtestnoop64 */;
@@ -834,6 +847,7 @@
 		0A2E22B6197170BF00255B00 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(BUILD_DIR)/$(CONFIGURATION)/RDInjectionWizardTestsHost.app/Contents/MacOS/RDInjectionWizardTestsHost";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -847,6 +861,7 @@
 				);
 				INFOPLIST_FILE = "RDInjectionWizardTests/RDInjectionWizardTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILD_DIR)/$(CONFIGURATION)/RDInjectionWizardTestsHost.app/Contents/MacOS/RDInjectionWizardTestsHost";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -854,6 +869,7 @@
 		0A2E22B7197170BF00255B00 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(BUILD_DIR)/$(CONFIGURATION)/RDInjectionWizardTestsHost.app/Contents/MacOS/RDInjectionWizardTestsHost";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -863,6 +879,7 @@
 				GCC_PREFIX_HEADER = "RDInjectionWizard/RDInjectionWizard-Prefix.pch";
 				INFOPLIST_FILE = "RDInjectionWizardTests/RDInjectionWizardTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILD_DIR)/$(CONFIGURATION)/RDInjectionWizardTestsHost.app/Contents/MacOS/RDInjectionWizardTestsHost";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
