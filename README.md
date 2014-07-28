@@ -22,6 +22,7 @@ Please take into account that, since the project is still in alpha version, ther
 * It is only tested on OS X 10.9. See [issue #1](https://github.com/rodionovd/RDInjectionWizard/issues/1) if you want to help testing on 10.7, 10.8 or 10.10;  
 * API is unstable and is going to change in the future;  
 
+*I also guess you're more interested in the [`develop`](https://github.com/rodionovd/RDInjectionWizard/tree/develop) branch.*  
 
 #### What's the payload?
 -----
