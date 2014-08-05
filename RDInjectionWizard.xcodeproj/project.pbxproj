@@ -529,6 +529,7 @@
 		0A2E2281197170BF00255B00 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = RD;
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = rodionovd;
 				TargetAttributes = {
@@ -773,7 +774,15 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
-				WARNING_CFLAGS = "-Wall";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wconversion",
+					"-Wdeprecated-implementations",
+					"-Wfloat-equal",
+					"-Wimplicit-retain-self",
+					"-Wnewline-eof",
+					"-Wshadow",
+				);
 			};
 			name = Debug;
 		};
@@ -809,8 +818,17 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				OTHER_CFLAGS = "-DNDEBUG";
 				SDKROOT = macosx;
-				WARNING_CFLAGS = "-Wall";
+				WARNING_CFLAGS = (
+					"-Wall",
+					"-Wconversion",
+					"-Wdeprecated-implementations",
+					"-Wfloat-equal",
+					"-Wimplicit-retain-self",
+					"-Wnewline-eof",
+					"-Wshadow",
+				);
 			};
 			name = Release;
 		};

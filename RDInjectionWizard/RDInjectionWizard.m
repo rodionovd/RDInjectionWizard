@@ -92,18 +92,18 @@
          /* Check the xpc reply for an injection error */
          if (!reply) {
              NSLog(@"%s: daemon connection error: %d", __PRETTY_FUNCTION__, error);
-             dispatch_async(_callbackQueue, ^{
+             dispatch_async(self->_callbackQueue, ^{
                  if (failure) failure(kCouldNotConnectToHelper);
              });
              return;
          }
          BOOL status = xpc_dictionary_get_bool(reply, "status");
          if (status) {
-             dispatch_async(_callbackQueue, ^{
+             dispatch_async(self->_callbackQueue, ^{
                  if (success) success();
              });
          } else {
-             dispatch_async(_callbackQueue, ^{
+             dispatch_async(self->_callbackQueue, ^{
                  if (failure) failure(kInjectionFailed);
              });
          }
@@ -128,7 +128,7 @@ extern int sandbox_container_path_for_pid(pid_t, char *buffer, size_t bufsize);
     }
     NSString *container = nil;
     if (sandbox_container_path_for_pid(_target, buf, MAXPATHLEN) == KERN_SUCCESS) {
-        container = [NSString stringWithUTF8String: buf];
+        container = @(buf);
     }
     free(buf);
 

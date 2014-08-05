@@ -212,7 +212,7 @@ static NSString *kRDIWDeamonIdentifer = @"me.rodionovd.RDInjectionWizard.injecto
         NSLog(@"%s: %@", __PRETTY_FUNCTION__, (__bridge NSError *)error);
     }
 
-    return (blessed);
+    return !!(blessed);
 }
 
 - (BOOL)_removeHelperFromHostAppBundle
