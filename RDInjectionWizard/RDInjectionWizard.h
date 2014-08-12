@@ -23,7 +23,7 @@ typedef void (^RDInjectionFailedBlock)(RDInjectionError error);
 /// A target process' identifer
 @property (assign, readwrite) pid_t target;
 /// A path to the payload library/framework
-@property (retain, readwrite) NSString *payload;
+@property (copy, readwrite) NSString *payload;
 
 /**
  * @abstract

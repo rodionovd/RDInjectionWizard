@@ -6,8 +6,7 @@
 //  Copyright (c) 2014 rodionovd. All rights reserved.
 //
 
-#ifndef rd_inject_library_h
-    #define rd_inject_library_h
+#pragma once
 
 /**
  * @abstract
@@ -31,5 +30,3 @@
  * Means an error occured while injecting into the target
  */
 int rd_inject_library(pid_t target, const char *library_path);
-
-#endif

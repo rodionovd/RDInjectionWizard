@@ -140,9 +140,9 @@ bool process_is_64_bit(pid_t proc)
  * We'll also gracefully terminate the thread when dlopen() returned.
  *
  * @return
- * KERN_SUCCESS if injection was done without errors AND remote dlopen() didn't fail
+ * KERN_SUCCESS if injection was done without errors
  * @return
- * KERN_FAILRUE if there're some injection errors OR remote dlopen() failed to load the given library
+ * KERN_FAILRUE if there're some injection errors
  */
 static
 int load_library_into_task(task_t task, const char *library_path, void **return_value)
@@ -171,7 +171,7 @@ int load_library_into_task(task_t task, const char *library_path, void **return_
     /* Reserve some place for a pthread struct */
     mach_vm_address_t pthread_struct = stack;
 
-    /* Copy the backtrace to remote stack */
+    /* Copy the backtrace to the top of remote stack */
     err = mach_vm_write(task, (stack + kRDRemoteStackSize), (vm_offset_t)fake_backtrace,
                         (mach_msg_type_number_t)sizeof(fake_backtrace));
     RDFailOnError("mach_vm_write");
