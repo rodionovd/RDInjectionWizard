@@ -1010,6 +1010,7 @@
 		0AFEB8471972876C00BE2968 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -1027,12 +1028,15 @@
 					"\"injector/me.rodionovd.RDInjectionWizard.injector-Launchd.plist\"",
 				);
 				PRODUCT_NAME = me.rodionovd.RDInjectionWizard.injector;
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = all;
 			};
 			name = Debug;
 		};
 		0AFEB8481972876C00BE2968 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
@@ -1046,6 +1050,8 @@
 					"\"injector/me.rodionovd.RDInjectionWizard.injector-Launchd.plist\"",
 				);
 				PRODUCT_NAME = me.rodionovd.RDInjectionWizard.injector;
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = all;
 			};
 			name = Release;
 		};
