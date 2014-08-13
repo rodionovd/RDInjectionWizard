@@ -303,6 +303,7 @@ mach_port_t init_exception_port_for_thread(thread_act_t thread, thread_state_fla
  *              find another handler for it
  *
  */
+__attribute__((visibility("default")))
 kern_return_t
 catch_exception_raise_state_identity(mach_port_t exception_port, mach_port_t thread,
                                      mach_port_t task, exception_type_t exception,
