@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A0C830E1982EA2C00CBA7EC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A0C83001982E55700CBA7EC /* MainMenu.xib */; };
 		0A2E2298197170BF00255B00 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A2E2296197170BF00255B00 /* InfoPlist.strings */; };
 		0A2E229C197170BF00255B00 /* RDInjectionWizard.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2E229B197170BF00255B00 /* RDInjectionWizard.m */; };
 		0A2E22A3197170BF00255B00 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2E22A2197170BF00255B00 /* XCTest.framework */; };
 		0A2E22A4197170BF00255B00 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2E228D197170BF00255B00 /* Cocoa.framework */; };
 		0A2E22A7197170BF00255B00 /* RDInjectionWizard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2E228A197170BF00255B00 /* RDInjectionWizard.framework */; };
 		0A2E22AF197170BF00255B00 /* RDInjectionWizardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2E22AE197170BF00255B00 /* RDInjectionWizardTests.m */; };
+		0A533F62199BA6DF0065F2D6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A0C83001982E55700CBA7EC /* MainMenu.xib */; };
 		0A61A27B1972AF0300728FAB /* RDIWDaemonMasterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A61A27A1972AF0300728FAB /* RDIWDaemonMasterTests.m */; };
 		0A891D2B1980FE8A00CAF525 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A891D2A1980FE8A00CAF525 /* AppDelegate.m */; };
 		0A891D321980FEA100CAF525 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A891D301980FEA100CAF525 /* main.m */; };
@@ -600,7 +600,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A0C830E1982EA2C00CBA7EC /* MainMenu.xib in Resources */,
+				0A533F62199BA6DF0065F2D6 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1010,6 +1010,7 @@
 		0AFEB8471972876C00BE2968 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -1027,12 +1028,15 @@
 					"\"injector/me.rodionovd.RDInjectionWizard.injector-Launchd.plist\"",
 				);
 				PRODUCT_NAME = me.rodionovd.RDInjectionWizard.injector;
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = all;
 			};
 			name = Debug;
 		};
 		0AFEB8481972876C00BE2968 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
@@ -1046,6 +1050,8 @@
 					"\"injector/me.rodionovd.RDInjectionWizard.injector-Launchd.plist\"",
 				);
 				PRODUCT_NAME = me.rodionovd.RDInjectionWizard.injector;
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = all;
 			};
 			name = Release;
 		};
