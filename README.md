@@ -19,7 +19,7 @@ RDInjectionWizard *wizard = [[RDInjectionWizard alloc] initWithTarget: target_pr
 
 Please take into account that, since the project is still in alpha version, there're some limitations:  
 * The only supported target arhitecture is `x86_64`. I'm not sure about adding i386, but pull requests are welcome;  
-* It is only tested on OS X 10.9. See [issue #1](https://github.com/rodionovd/RDInjectionWizard/issues/1) if you want to help testing on 10.7, 10.8 or 10.10;  
+* ~~It is only tested on OS X 10.9. See [issue #1](https://github.com/rodionovd/RDInjectionWizard/issues/1).~~ It does work on both 10.9 and 10.10;    
 * API is unstable and is going to change in the future;  
 
 *I also guess you're more interested in the [`develop`](https://github.com/rodionovd/RDInjectionWizard/tree/develop) branch.*  
