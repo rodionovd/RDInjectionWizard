@@ -27,6 +27,9 @@
     __LINE__-1, function, mach_error_string(err)); return (err);}}
 
 #pragma mark - Private Interface
+
+static pthread_mutex_t lock = PTHREAD_MUTEX_INITIALIZER;
+
 static int load_library_into_task(task_t task, const char *library_path, void **return_value);
 static mach_port_t
 init_exception_port_for_thread(thread_act_t thread, thread_state_flavor_t thread_flavor);
@@ -58,7 +61,7 @@ int rd_inject_library(pid_t target_proc, const char *library_path)
     if (target_proc <= 0 || !library_path) {
         return (err);
     }
-    static pthread_mutex_t lock = PTHREAD_MUTEX_INITIALIZER;
+
     pthread_mutex_lock(&lock);
     {
         /* Yeah, I know, there're lots of i386 apps.

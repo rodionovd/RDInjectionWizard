@@ -9,18 +9,21 @@
 @import Security;
 
 #import <xpc/xpc.h>
+#import <pthread.h>
 #import "RDIWDeamonMaster.h"
 
 #define kRDIWDeamonMasterCallbackQueueLabel "me.rodionovd.RDIWDeamonMaster.callbackqueue"
 
 static NSString *kRDIWDeamonIdentifer = @"me.rodionovd.RDInjectionWizard.injector";
 
+static pthread_mutex_t authorizationLock = PTHREAD_MUTEX_INITIALIZER;
+static pthread_mutex_t fileIOLock = PTHREAD_MUTEX_INITIALIZER;
+
 @interface RDIWDeamonMaster()
 {
     // A connection handle for our priveleged helper
     xpc_connection_t _connection;
     AuthorizationRef _authorization;
-    NSLock *_authorizationLock;
     // A dispatch queue to perform user's callbacks in
     dispatch_queue_t _callbackQueue;
 }
@@ -46,7 +49,6 @@ static NSString *kRDIWDeamonIdentifer = @"me.rodionovd.RDInjectionWizard.injecto
 - (instancetype)init
 {
     if ((self = [super init])) {
-        _authorizationLock = [NSLock new];
         _callbackQueue = dispatch_queue_create(kRDIWDeamonMasterCallbackQueueLabel,
                                                 DISPATCH_QUEUE_CONCURRENT);
     }
@@ -87,13 +89,17 @@ static NSString *kRDIWDeamonIdentifer = @"me.rodionovd.RDInjectionWizard.injecto
     if (_connection) {
         return YES;
     }
+    pthread_mutex_lock(&fileIOLock);
     if (NO == [self _copyHelperIntoHostAppBundle]) {
+        pthread_mutex_unlock(&fileIOLock);
         return NO;
     }
     if (NO == [self _registerDeamonWithLaunchd]) {
+        pthread_mutex_unlock(&fileIOLock);
         return NO;
     }
     if (NO == [self _removeHelperFromHostAppBundle]) {
+        pthread_mutex_unlock(&fileIOLock);
         return NO;
     }
 
@@ -102,8 +108,10 @@ static NSString *kRDIWDeamonIdentifer = @"me.rodionovd.RDInjectionWizard.injecto
                                                      XPC_CONNECTION_MACH_SERVICE_PRIVILEGED);
     if (!_connection) {
         NSLog(@"%s: Unable to create XPC connection", __PRETTY_FUNCTION__);
+        pthread_mutex_unlock(&fileIOLock);
         return NO;
     }
+    pthread_mutex_unlock(&fileIOLock);
 
     /* Every connection has to have an event handler set */
     xpc_connection_set_event_handler(_connection, ^(xpc_object_t __unused event) {
@@ -180,7 +188,7 @@ static NSString *kRDIWDeamonIdentifer = @"me.rodionovd.RDInjectionWizard.injecto
         return YES;
     }
 
-    [_authorizationLock lock];
+    pthread_mutex_lock(&authorizationLock);
     {
         /* Requst an authorization right to be able to register (install) our helper tool */
         AuthorizationItem items[] = {
@@ -195,12 +203,12 @@ static NSString *kRDIWDeamonIdentifer = @"me.rodionovd.RDInjectionWizard.injecto
         int status = AuthorizationCreate(&authRights, kAuthorizationEmptyEnvironment,
                                               flags, &_authorization);
         if (status != errAuthorizationSuccess) {
-            [_authorizationLock unlock];
+            pthread_mutex_unlock(&authorizationLock);
             NSLog(@"%s: could not create authorization rights!", __PRETTY_FUNCTION__);
             return NO;
         }
     }
-    [_authorizationLock unlock];
+    pthread_mutex_unlock(&authorizationLock);
 
     /* Register the helper with launchd */
     CFErrorRef error = NULL;
