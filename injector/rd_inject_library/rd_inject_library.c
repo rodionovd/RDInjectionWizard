@@ -28,8 +28,6 @@
 
 #pragma mark - Private Interface
 
-static pthread_mutex_t lock = PTHREAD_MUTEX_INITIALIZER;
-
 static int load_library_into_task(task_t task, const char *library_path, void **return_value);
 static mach_port_t
 init_exception_port_for_thread(thread_act_t thread, thread_state_flavor_t thread_flavor);
@@ -62,44 +60,40 @@ int rd_inject_library(pid_t target_proc, const char *library_path)
         return (err);
     }
 
-    pthread_mutex_lock(&lock);
-    {
-        /* Yeah, I know, there're lots of i386 apps.
-         * No.
-         * There aren't.
-         * YOLO.
-         */
-        bool proc64bit = process_is_64_bit(target_proc);
-        if (!proc64bit) {
-            syslog(LOG_NOTICE, "[The target task should be a 64 bit process]");
-            goto end;
-        }
-
-        task_t task;
-        /* You should be a member of procmod users group in order to
-         * use task_for_pid(). Being root is OK. */
-        err = task_for_pid(mach_task_self(), target_proc, &task);
-        if (err != KERN_SUCCESS) {
-            syslog(LOG_NOTICE, "task_for_pid() failed with error: %s [%d]",
-                   mach_error_string(err), err);
-            goto end;
-        }
-        void *remote_dlopen_return_value = NULL;
-        err = load_library_into_task(task, library_path, &remote_dlopen_return_value);
-        if (err != KERN_SUCCESS) {
-            syslog(LOG_NOTICE, "load_library_into_task() failed with error: %s [%d]",
-                   mach_error_string(err), err);
-            goto end;
-        }
-        if (remote_dlopen_return_value == NULL) {
-            err = KERN_INVALID_OBJECT;
-            syslog(LOG_NOTICE, "Remote dlopen() failed");
-            goto end;
-        }
+    /* Yeah, I know, there're lots of i386 apps.
+     * No.
+     * There aren't.
+     * YOLO.
+     */
+    bool proc64bit = process_is_64_bit(target_proc);
+    if (!proc64bit) {
+        syslog(LOG_NOTICE, "[The target task should be a 64 bit process]");
+        goto end;
     }
-end:
-    pthread_mutex_unlock(&lock);
 
+    task_t task;
+    /* You should be a member of procmod users group in order to
+     * use task_for_pid(). Being root is OK. */
+    err = task_for_pid(mach_task_self(), target_proc, &task);
+    if (err != KERN_SUCCESS) {
+        syslog(LOG_NOTICE, "task_for_pid() failed with error: %s [%d]",
+               mach_error_string(err), err);
+        goto end;
+    }
+    void *remote_dlopen_return_value = NULL;
+    err = load_library_into_task(task, library_path, &remote_dlopen_return_value);
+    if (err != KERN_SUCCESS) {
+        syslog(LOG_NOTICE, "load_library_into_task() failed with error: %s [%d]",
+               mach_error_string(err), err);
+        goto end;
+    }
+    if (remote_dlopen_return_value == NULL) {
+        err = KERN_INVALID_OBJECT;
+        syslog(LOG_NOTICE, "Remote dlopen() failed");
+        goto end;
+    }
+
+end:
     return (err);
 }
 
