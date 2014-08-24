@@ -56,7 +56,9 @@ or an Objective-C **class implementing** the `+load` method:
 ------  
 Pretty simple!  
 
-1. First, compile your own version of `RDInjectionWizard` using the project in this repository, add this framework to your project (don't forget to create a Copy File build phase for it) and link your application against the `RDInjectionWizard`.
+1. First, compile your own version of `RDInjectionWizard` using the project in this repository, add this framework to your project (don't forget to create a Copy File build phase for it) and link your application against the `RDInjectionWizard`.  
+
+  **Don't forget to change a `Code Signing Identity` project setting to your own certificate name.  *Make sure that you're using the same certificate for your main project.***    
 
 2. Next, open your application's Info.plist and add the following key to the dictionary there:  
 
