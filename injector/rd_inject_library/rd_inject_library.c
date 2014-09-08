@@ -102,7 +102,7 @@ end:
  * Check wheither the given task is a 64 bit process.
  *
  * @return YES
- * Means the process' architecture is x86_64 (also ppcp64, but who cares)
+ * Means the process' architecture is x86_64 (also ppc64, but who cares)
  * @return NO
  * Means it's not
  */
