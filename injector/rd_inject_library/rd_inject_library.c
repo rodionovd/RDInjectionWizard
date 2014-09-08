@@ -102,7 +102,7 @@ end:
  * Check wheither the given task is a 64 bit process.
  *
  * @return YES
- * Means the process' architecture is x86_64 (also ppc64, but who cares)
+ * Means the architecture of the given process is x86_64 (also ppc64, but who cares)
  * @return NO
  * Means it's not
  */
@@ -127,14 +127,15 @@ bool process_is_64_bit(pid_t proc)
  * Load a library into a given task.
  *
  * @discussion
- * This function creates a remote thread inside the task and perform dlopen()
+ * This function creates a remote thread within the task process and performs dlopen()
  * on this thread.
  *
- * As the created thead is a plain mach thread, we also need to convert it into a UNIX
- * pthead before calling dlopen(). To do that we'll set up an exeption handler for the
- * remote thread, then call _pthread_set_self() with invalid return address on it, catch
- * an EXC_BAD_ACCESS exception, re-configure the thread to call dlopen() and resume it.
- * We'll also gracefully terminate the thread when dlopen() returned.
+ * Since the created thread is a plain mach thread we also need to convert it into a UNIX
+ * pthread before calling dlopen() on it (dl* functions rely on some pthread internal info).
+ * To do that we'll set up an exeption handler for the remote thread, then call
+ * _pthread_set_self() with invalid return address on it, catch an EXC_BAD_ACCESS exception,
+ * re-configure the thread to call dlopen() and resume it.
+ * We'll also gracefully terminate the thread when dlopen() return.
  *
  * @return
  * KERN_SUCCESS if injection was done without errors
@@ -254,11 +255,10 @@ int load_library_into_task(task_t task, const char *library_path, void **return_
 
 /**
  * @abstract
- * Initialize an EXC_BAD_ACCESS exception port for the given thread, and set it
- * for this thread.
+ * Initialize an EXC_BAD_ACCESS exception port for the given thread.
  *
  * @return
- * An identifier of the initialized exception port for catching EXC_BAD_ACCESS
+ * An identifier of the initialized EXC_BAD_ACCESS exception port
  * @return
  * (0) that means the kernel failed to initizalize the exception port for the given thread
  */
